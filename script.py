@@ -6,4 +6,4 @@ df = mxd.activeDataFrame
 groupName = "New Group Layer"
 allLayers = arcpy.mapping.ListLayers(mxd, groupName, df) [0]
 for layer in allLayers: 
-    arcpy.ApplySymbologyFromLayer_management(layer, "TILE_NAME_+_EXTENSION")
+    arcpy.ApplySymbologyFromLayer_management(layer, "RASTER_NAME_+_EXTENSION")
